@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <title>Test form</title>
+    <h1>Test form</h1>
+    <style>textarea {resize: none}</style>
+</head>
+<body>
+<div id="ex1"></div>
+<form action="form.php" method="post" name="test">
+    <textarea name="textfield" id="txt1" oninput="counter();" cols="60" rows="7"></textarea>Кол-во символов: <label id="result"></label> /
+    <label name="countmsg" id="countmsg"></label><label id="label1"></label> <input type="hidden" name="count" id="count" value="0"> <br>
+    <label><input type="checkbox" id="checkbox" onchange="transliterate();">транслитерировать</label>
+    <br><input type="submit" name="submit" value="Сохранить">
+
+</form>
+<script src="form.js"></script>
+</body>
+</html>
